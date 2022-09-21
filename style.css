@@ -209,6 +209,9 @@ header ul a:hover {
   .sticky {
     padding-bottom: 50px;
   }
+  header {
+    height: 50px;
+  }
 }
 .section_1 {
   height: 100vh;
