@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 ol, ul {
@@ -73,7 +74,7 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  transition: 0.2s;
+  transition: 0.8s;
   padding-inline: 5%;
 }
 
@@ -106,10 +107,12 @@ header img {
 header ul {
   display: flex;
   justify-content: center;
+  opacity: 1;
+  transition: 0.8s;
 }
 
 header ul a {
-  color: #FFF;
+  color: #fff;
   margin-inline: 16px;
   text-decoration: none;
   list-style: none;
@@ -117,7 +120,7 @@ header ul a {
 }
 
 header ul a:hover {
-  color: #FB7637;
+  color: #fb7637;
 }
 
 .sticky {
@@ -126,10 +129,67 @@ header ul a:hover {
   transition: 0.4s;
 }
 
-.menu {
+.menu_burger {
+  transition: 0.8s;
+  transform: translateX(110vw);
   display: none;
 }
 
+#burger_icone, #close_icone {
+  position: fixed;
+  top: 20px;
+  right: 5%;
+  color: #fff;
+  width: 30px;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: translateX(100vw);
+  z-index: 999;
+  cursor: pointer;
+}
+
+.burger_parent ul {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.burger_parent ul a {
+  font-size: 50px;
+  color: #FFF;
+  text-decoration: none;
+  list-style: none;
+}
+
+.burger_parent ul a:hover {
+  color: #fb7637;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_burger {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #25201f;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.8s;
+  }
+  #burger_icone, #close_icone {
+    visibility: visible;
+    transform: translateX(0);
+  }
+  header ul {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+}
 .section_1 {
   height: 100vh;
   width: 100%;

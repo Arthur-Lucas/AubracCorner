@@ -1,9 +1,8 @@
-@import 'base/reset';
-
+@import "base/reset";
 
 //--------------------------------
 // Header
-header{
+header {
     color: #fff;
     padding: 20px 20%;
     text-align: center;
@@ -21,14 +20,13 @@ header{
     left: 0;
     right: 0;
     z-index: 999;
-    transition: 0.2s;
+    transition: 0.8s;
     padding-inline: 5%;
-
 }
 //overlay black
 
-.background{
-    background: url('../img/aubrac_burger_header.jpg') no-repeat center center;
+.background {
+    background: url("../img/aubrac_burger_header.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -37,56 +35,117 @@ header{
     align-items: center;
 }
 
-
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.3);
+    background: rgba(0, 0, 0, 0.3);
     z-index: 998;
-    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
-    
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-header img{
+header img {
     max-height: 50px;
     object-fit: contain;
 }
 
-header ul{
-display: flex;
-justify-content: center;;
+header ul {
+    display: flex;
+    justify-content: center;
+    opacity: 1;
+    transition: 0.8s;
 }
 
-header ul a{
-    color: #FFF;
+header ul a {
+    color: #fff;
     margin-inline: 16px;
     text-decoration: none;
     list-style: none;
     font-size: 16px;
 }
 
-header ul a:hover{
-    color: #FB7637;
+header ul a:hover {
+    color: #fb7637;
 }
 
-
-.sticky{
+.sticky {
     background: #25201f;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     transition: 0.4s;
 }
 
 //Menu burger
-.menu{
+.menu_burger {
+    transition: 0.8s;
+    transform: translateX(110vw);
     display: none;
+}
+
+#burger_icone, #close_icone {
+    position: fixed;
+    top: 20px;
+    right: 5%;
+    color: #fff;
+    width: 30px;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: translateX(100vw);
+    z-index: 999;
+    cursor: pointer;
+}
+
+
+.burger_parent ul{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+.burger_parent ul a {
+    font-size: 50px;
+    color: #FFF;
+    text-decoration: none;
+    list-style: none;
+}
+
+.burger_parent ul a:hover {
+    color: #fb7637;
+}
+
+
+@media screen and (max-width: 768px) {
+    .menu_burger {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #25201f;
+        z-index: 999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.8s;
+        
+    }
+    #burger_icone, #close_icone {
+        visibility: visible;
+        transform: translateX(0);
+
+    }
+   
+    header ul{
+        transform: translateX(-100vw);
+        opacity: 0;
+    }
 }
 
 //--------------------------------
 //Section 1
-.section_1{
+.section_1 {
     height: 100vh;
     width: 100%;
 }
