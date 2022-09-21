@@ -56,6 +56,10 @@ h1 {
   font-weight: 700;
 }
 
+body {
+  background-color: #F4F4F4;
+}
+
 header {
   color: #fff;
   padding: 20px 20%;
@@ -107,6 +111,16 @@ header {
   align-items: center;
 }
 
+.background_histoire {
+  background: url("../img/uber-travis-kalanick-indian-institute-of-technology-iit-inde-bombay-2016-01-16.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -146,7 +160,8 @@ header {
 
 header img {
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 header ul {
@@ -308,4 +323,73 @@ a {
   justify-content: space-between;
 }
 
-/*# sourceMappingURL=style.css.map */
+.container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container p span.typed-text {
+  font-weight: normal;
+  color: #F74D00;
+}
+
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}/*# sourceMappingURL=style.css.map */
