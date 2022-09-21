@@ -1,7 +1,11 @@
 @import 'base/reset';
+
+
+//--------------------------------
+// Header
 header{
     color: #fff;
-    padding: 20px;
+    padding: 20px 20%;
     text-align: center;
     font-size: 20px;
     font-weight: 700;
@@ -10,34 +14,54 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);;  
+    background: transparent;
+    padding-inline: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: 0.2s;
+    padding-inline: 5%;
+
+}
+//overlay black
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    z-index: 998;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.3);
+    
 }
 
 header img{
-    width: 20%;
     max-height: 50px;
     object-fit: contain;
 }
 
 header ul{
 display: flex;
-justify-content: center;
+justify-content: center;;
 }
 
 header ul a{
-    color: #000;
-    margin-inline: 10px;
+    color: #FFF;
+    margin-inline: 16px;
     text-decoration: none;
     list-style: none;
     font-size: 16px;
 }
 
 header ul a:hover{
-    color: #e7531e;
+    color: #FB7637;
 }
 
 .background{
-    background: url('../img/aubrac_burger_header.jpg') no-repeat center center fixed;
+    background: url('../img/aubrac_burger_header.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -46,11 +70,16 @@ header ul a:hover{
     align-items: center;
 }
 
-// h1{
-//     color: #fff;
-//     font-size: 36px;
-//     font-weight: 700;
-//     text-transform: uppercase;
-//     letter-spacing: 2px;
-//     text-align: center;
-// }
+
+.sticky{
+    background: #25201f;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    transition: 0.4s;
+}
+
+//--------------------------------
+//Section 1
+.section_1{
+    height: 100vh;
+    width: 100%;
+}
