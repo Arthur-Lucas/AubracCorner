@@ -81,6 +81,7 @@ header {
 .text{
     position: absolute;
     left: 5%;
+    right: 5%;
     z-index: 900;
     width: 100%;
 
@@ -309,6 +310,15 @@ header ul a:hover {
     }
     header{
         height: 50px;
+    }
+
+    .h1 h1{
+        font-size: 50px;
+        line-height: 0.7;
+        margin-right: 10px;
+    }
+    .text h2{
+        font-size: 20px;
     }
 
 }

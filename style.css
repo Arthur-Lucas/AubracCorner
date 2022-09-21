@@ -135,6 +135,7 @@ header {
 .text {
   position: absolute;
   left: 5%;
+  right: 5%;
   z-index: 900;
   width: 100%;
 }
@@ -323,28 +324,31 @@ header ul a:hover {
     flex-direction: column;
     transition: 0.8s;
   }
-
   #burger_icone, #close_icone {
     visibility: visible;
     transform: translateX(0);
   }
-
   header ul {
     transform: translateX(-100vw);
     opacity: 0;
   }
-
   header img {
     position: fixed;
     top: 20px;
   }
-
   .sticky {
     max-height: 50px;
   }
-
   header {
     height: 50px;
+  }
+  .h1 h1 {
+    font-size: 50px;
+    line-height: 0.7;
+    margin-right: 10px;
+  }
+  .text h2 {
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 768px) {

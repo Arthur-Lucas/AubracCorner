@@ -18,6 +18,8 @@ close_icone.onclick = function () {
 
 }
 
+//ALEXANDRE TYPING CONCEPT
+
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
