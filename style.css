@@ -318,6 +318,7 @@ header ul a:hover {
   font-size: 30px;
   color: white;
   text-align: center;
+  line-height: 50px;
 }
 .menu-midi .section-formules .formules .card .content .price {
   transform: skew(-20deg);
@@ -333,6 +334,22 @@ header ul a:hover {
   height: 100%;
   transform: skew(20deg);
   color: #25201f;
+}
+.menu-midi .section-formules h4 {
+  padding-top: 5%;
+  color: #fb7637;
+  font-size: 45px;
+  font-weight: bold;
+}
+.menu-midi .section-formules h4 span {
+  color: #25201f;
+  font-weight: lighter;
+}
+.menu-midi .section-formules p {
+  line-height: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 5%;
 }
 
 @media screen and (max-width: 768px) {

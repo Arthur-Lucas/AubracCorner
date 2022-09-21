@@ -272,6 +272,7 @@ header ul a:hover {
                         font-size: 30px;
                         color: white;
                         text-align: center;
+                        line-height: 50px;
                     }
                     .price{
                         transform: skew(-20deg);
@@ -292,7 +293,22 @@ header ul a:hover {
                 
             }
         }
-        
+        h4{
+            padding-top: 5%;
+            color:#fb7637;
+            font-size: 45px;
+            font-weight: bold;
+            span{
+                color: #25201f;
+                font-weight: lighter;
+            }
+        }
+        p {
+            line-height: 60px;
+            font-size: 30px;
+            font-weight: bold;
+            padding-bottom: 5%;
+        }
         
     }
     
