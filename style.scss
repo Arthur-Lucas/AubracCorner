@@ -1,3 +1,37 @@
-p{
-    color: blue;
+@import 'base/reset';
+header{
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);;  
+}
+
+header img{
+    width: 20%;
+    max-height: 50px;
+    object-fit: contain;
+}
+
+header ul{
+display: flex;
+justify-content: center;
+}
+
+header ul a{
+    color: #000;
+    margin-inline: 10px;
+    text-decoration: none;
+    list-style: none;
+    font-size: 16px;
+}
+
+header ul a:hover{
+    color: red;
 }
