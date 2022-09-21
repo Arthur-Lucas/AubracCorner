@@ -174,7 +174,8 @@ header {
 
 header img {
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 header ul {
@@ -362,6 +363,20 @@ header ul a:hover {
   width: 100%;
 }
 
+.section_2 {
+  height: 15vh;
+  width: 100%;
+}
+
+.marg_text {
+  margin: auto;
+  width: 75%;
+  padding: 20px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #222;
+}
+
 #footer a {
   text-decoration: none;
   color: white;
@@ -432,11 +447,31 @@ header ul a:hover {
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
-  animation: blink 1s infinite;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
 }
 
 .container p span.cursor.typing {
-  animation: none;
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
 }
 
 @keyframes blink {
@@ -455,6 +490,4 @@ header ul a:hover {
   100% {
     background-color: #ccc;
   }
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
