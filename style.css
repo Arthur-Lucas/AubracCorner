@@ -88,6 +88,26 @@ header {
   align-items: center;
 }
 
+.background_menu {
+  background: url("../img/AUBRAC_CORNER_frontjpg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background_concept {
+  background: url("../img/AUBRAC_CORNER_13.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -101,7 +121,8 @@ header {
 
 header img {
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 header ul {
@@ -194,10 +215,12 @@ header ul a:hover {
   height: 100vh;
   width: 100%;
 }
+
 a {
   text-decoration: none;
   color: white;
 }
+
 #footer {
   list-style: none;
   text-decoration: none;
@@ -214,7 +237,7 @@ a {
   justify-content: center;
 }
 
-.footer_list_buttons>ul {
+.footer_list_buttons > ul {
   margin-bottom: 18px;
 }
 
@@ -226,6 +249,7 @@ a {
 .text_mentions {
   max-width: 80%;
 }
+
 .bg-black {
   background-color: black;
 }
@@ -234,6 +258,4 @@ a {
   padding: 5%;
   display: flex;
   justify-content: space-between;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
