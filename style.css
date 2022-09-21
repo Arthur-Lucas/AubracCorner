@@ -301,26 +301,10 @@ header ul a:hover {
 }
 .menu-midi .section-formules .formules .card .image-card {
   background-image: url(img/aubrac_food_2.jpeg);
-  background-repeat: no-repeat;
   width: 100%;
   height: 50%;
-  background-size: contain;
+  background-size: cover;
   border-radius: 30px 30px 0 0;
-}
-.menu-midi .section-formules .formules .card .circle {
-  width: 100px;
-  height: 100px;
-  background: white;
-  border-radius: 50%;
-}
-.menu-midi .section-formules .formules .card .circle p {
-  color: #fb7637;
-  font-weight: bold;
-  display: flex;
-  font-size: 28px;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -444,31 +428,11 @@ header ul a:hover {
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  animation: blink 1s infinite;
 }
 
 .container p span.cursor.typing {
-  -webkit-animation: none;
-          animation: none;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
-  }
+  animation: none;
 }
 
 @keyframes blink {
@@ -487,4 +451,6 @@ header ul a:hover {
   100% {
     background-color: #ccc;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
