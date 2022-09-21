@@ -25,7 +25,7 @@ header {
 //overlay black
 
 .background {
-    background: url("../img/aubrac_burger_header.jpg") no-repeat center center;
+    background: url("img/aubrac_burger_header.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -35,7 +35,7 @@ header {
 }
 
 .background_menu {
-    background: url("../img/AUBRAC_CORNER_frontjpg.jpg") no-repeat center center;
+    background: url("img/AUBRAC_CORNER_frontjpg.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -45,7 +45,7 @@ header {
 }
 
 .background_concept {
-    background: url("../img/AUBRAC_CORNER_13.jpg") no-repeat center center;
+    background: url("img/AUBRAC_CORNER_13.jpg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -145,6 +145,85 @@ header ul a:hover {
 
 .burger_parent ul a:hover {
     color: #fb7637;
+}
+
+.menu-midi{
+    background-color: #F4F4F4;
+    h2{
+        padding: 220px 0 0 114px;
+        font-size: 128px;
+        font-weight: bold;
+        position: relative;
+        color: #25201f;
+    }
+    h2::before{
+        content: "";
+        position: absolute;
+        left: 6.45%;
+        
+        bottom: 0;
+        width: 350px;
+        height: 14px;
+        background: #25201f;
+        
+    }
+
+    .section-formules{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
+        h3{
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: #25201f;
+        padding-top: 10%;
+        padding-bottom: 30px;
+        }
+        .formules{
+            width: 60%;
+            height: 700px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .card{
+                position: relative;
+                border-radius: 30px;
+                background-color: #25201f;
+                width: 40%;
+                height: 100%;
+                .image-card{
+                    background-image: url(img/aubrac_food_2.jpeg);
+                    background-repeat: no-repeat;
+                    width: 100%;
+                    height: 50%;
+                    background-size: contain;
+                    border-radius: 30px 30px 0 0;
+                }
+                .circle{
+                    width: 100px;
+                    height: 100px;
+                    background: white;
+                    border-radius: 50%;
+                    p{
+                        color: #fb7637;
+                        font-weight: bold;
+                         display: flex;
+                        font-size: 28px;
+                        height: 100%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                } 
+            }
+        }
+        
+        
+    }
+    
 }
 
 
