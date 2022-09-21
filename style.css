@@ -135,9 +135,8 @@ header {
 .text {
   position: absolute;
   left: 5%;
-  right: 5%;
   z-index: 900;
-  width: 100%;
+  width: 90%;
 }
 
 .text .h1 {
@@ -154,7 +153,7 @@ header {
   letter-spacing: 2px;
   margin-bottom: 20px;
   color: #FFF;
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   z-index: 901;
   transition: font-size 0.8s;
   margin-right: 30px;
