@@ -87,6 +87,26 @@ header {
   align-items: center;
 }
 
+.background_menu {
+  background: url("../img/AUBRAC_CORNER_frontjpg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background_concept {
+  background: url("../img/AUBRAC_CORNER_13.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -100,7 +120,8 @@ header {
 
 header img {
   max-height: 50px;
-  object-fit: contain;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 header ul {
@@ -218,4 +239,46 @@ header ul a:hover {
   width: 100%;
 }
 
-/*# sourceMappingURL=style.css.map */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#footer {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.footer_social_network {
+  display: flex;
+}
+
+.footer_social_network_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footer_list_buttons > ul {
+  margin-bottom: 18px;
+}
+
+.logo_social_network {
+  height: 50px;
+  width: 50px;
+}
+
+.text_mentions {
+  max-width: 80%;
+}
+
+.bg-black {
+  background-color: black;
+}
+
+.div_all_footer {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=style.css.map */
