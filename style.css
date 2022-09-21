@@ -77,8 +77,18 @@ header {
   padding-inline: 5%;
 }
 
+.background {
+  background: url("../img/aubrac_burger_header.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .overlay {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -110,20 +120,14 @@ header ul a:hover {
   color: #FB7637;
 }
 
-.background {
-  background: url("../img/aubrac_burger_header.jpg") no-repeat center center;
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .sticky {
   background: #25201f;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   transition: 0.4s;
+}
+
+.menu {
+  display: none;
 }
 
 .section_1 {
