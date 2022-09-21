@@ -56,6 +56,10 @@ h1 {
   font-weight: 700;
 }
 
+body {
+  background-color: #F4F4F4;
+}
+
 header {
   color: #fff;
   padding: 20px 20%;
@@ -73,8 +77,8 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
-  transition: 0.8s;
   padding-inline: 5%;
+  transition: 0.8s;
 }
 
 .background {
@@ -107,15 +111,64 @@ header {
   align-items: center;
 }
 
+.background_histoire {
+  background: url("../img/uber-travis-kalanick-indian-institute-of-technology-iit-inde-bombay-2016-01-16.jpeg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .overlay {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  z-index: 998;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 800;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  position: absolute;
+  left: 5%;
+  z-index: 900;
+  width: 100%;
+}
+
+.text .h1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.text h1 {
+  text-align: left;
+  font-size: 100px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #FFF;
+  font-family: "Poppins";
+  z-index: 901;
+  transition: font-size 0.8s;
+  margin-right: 30px;
+  transition: transform 0.8s, color 0.4s;
+  line-height: 0.9;
+}
+
+.text h2 {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  color: #FFF;
+  margin-left: 2%;
 }
 
 header img {
@@ -303,11 +356,17 @@ header ul a:hover {
   }
 
   .sticky {
-    padding-bottom: 50px;
+    max-height: 50px;
   }
 
   header {
     height: 50px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .h1 h1:hover {
+    transform: translateY(-20px);
+    color: #fb7637;
   }
 }
 .section_1 {
@@ -315,7 +374,7 @@ header ul a:hover {
   width: 100%;
 }
 
-a {
+#footer a {
   text-decoration: none;
   color: white;
 }
@@ -359,4 +418,73 @@ a {
   justify-content: space-between;
 }
 
-/*# sourceMappingURL=style.css.map */
+.container {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container p {
+  font-size: 3rem;
+  padding: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.container p span.typed-text {
+  font-weight: normal;
+  color: #F74D00;
+}
+
+.container p span.cursor {
+  display: inline-block;
+  background-color: #ccc;
+  margin-left: 0.1rem;
+  width: 3px;
+  -webkit-animation: blink 1s infinite;
+          animation: blink 1s infinite;
+}
+
+.container p span.cursor.typing {
+  -webkit-animation: none;
+          animation: none;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: #ccc;
+  }
+  49% {
+    background-color: #ccc;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: #ccc;
+  }
+}/*# sourceMappingURL=style.css.map */
