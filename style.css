@@ -127,26 +127,38 @@ header {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 800;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .text {
   position: absolute;
-  left: 50px;
+  left: 5%;
   z-index: 900;
+  width: 100%;
 }
 
-.text h1 span {
+.text .h1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.text h1 {
   text-align: left;
-  font-size: 120px;
+  font-size: 100px;
   font-weight: 700;
   letter-spacing: 2px;
   margin-bottom: 20px;
   color: #FFF;
   font-family: "Poppins";
   z-index: 901;
+  transition: font-size 0.8s;
+  margin-right: 30px;
+  transition: transform 0.8s, color 0.4s;
+  line-height: 0.9;
 }
 
 .text h2 {
@@ -156,6 +168,7 @@ header {
   letter-spacing: 2px;
   margin-bottom: 20px;
   color: #FFF;
+  margin-left: 2%;
 }
 
 header img {
@@ -274,12 +287,18 @@ header ul a:hover {
     height: 50px;
   }
 }
+@media screen and (min-width: 768px) {
+  .h1 h1:hover {
+    transform: translateY(-20px);
+    color: #fb7637;
+  }
+}
 .section_1 {
   height: 100vh;
   width: 100%;
 }
 
-a {
+#footer a {
   text-decoration: none;
   color: white;
 }
