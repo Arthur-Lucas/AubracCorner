@@ -253,10 +253,133 @@ header ul a:hover {
                     background-size: cover;
                     border-radius: 30px 30px 0 0;
                 }
+                .content{
+                    height: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    p{
+                        font-size: 30px;
+                        color: white;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+                    .price{
+                        transform: skew(-20deg);
+                        height: 20%;
+                        width: 50%;
+                        background-color: white;
+                        position: relative;
+                        p{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            height: 100%;
+                            transform: skew(20deg);
+                            color:#25201f;
+                        }
+                    }
+                }
                 
             }
         }
+       
+        
     }
+
+    .section-dejeuner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        h3{
+            display: flex;
+            justify-content: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: #25201f;
+        padding-top: 10%;
+        padding-bottom: 30px;
+        }
+
+        h4{
+            padding-top: 5%;
+            color:#fb7637;
+            font-size: 45px;
+            font-weight: bold;
+            span{
+                color: #25201f;
+                font-weight: lighter;
+            }
+        }
+        p {
+            line-height: 60px;
+            font-size: 26px;
+            font-weight: bold;
+            padding-bottom: 5%;
+        }
+
+        .bg-dejeuner{
+            width: 40%;
+            position: absolute;
+            top: 152px;
+            left: -362px;
+            z-index: 0;
+        }
+        .bg-dejeuner2{
+            width: 40%;
+            position: absolute;
+            top: 490px;
+            right: -362px;
+            z-index: 0;
+        }
+
+        .menu-grid{
+            z-index: 1;
+            display: grid;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            grid-template-columns: 30% 30% 30%;
+            grid-template-rows: 200px 200px 200px;
+            margin-bottom: 6%;
+            div{
+                
+                p{
+                    font-size: 34px;
+                    line-height: normal;
+                    padding-bottom: 1%;
+                } 
+                .veggie{
+                    color: #75B993;
+                }
+                span{
+                    padding-top: 2%;
+                    line-height: 28px;
+                }
+            }
+           
+        }
+        .menu-grid2{
+            z-index: 1;
+            display: grid;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            grid-template-columns: 25% 25% 25%;
+            grid-row: auto;
+            h4{
+                padding-bottom: 10%;
+            }
+            p{
+                line-height: normal;
+            }
+        }
+    }
+    
 }
 
 @media screen and (max-width: 768px) {
