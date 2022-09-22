@@ -1,16 +1,84 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -22,8 +90,17 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
 
@@ -32,16 +109,20 @@ body {
   overflow-x: hidden;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none;
 }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
   content: none;
 }
@@ -173,7 +254,7 @@ header {
 header img {
   max-height: 50px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 header ul {
@@ -255,6 +336,7 @@ header ul a:hover {
 .menu-midi {
   background-color: #f4f4f4;
 }
+
 .menu-midi h2 {
   padding: 220px 0 0 114px;
   font-size: 128px;
@@ -262,6 +344,7 @@ header ul a:hover {
   position: relative;
   color: #25201f;
 }
+
 .menu-midi h2::before {
   content: "";
   position: absolute;
@@ -271,21 +354,24 @@ header ul a:hover {
   height: 14px;
   background: #25201f;
 }
+
 .menu-midi .section-formules {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
 }
+
 .menu-midi .section-formules h3 {
   display: flex;
   justify-content: center;
   font-size: 60px;
   font-weight: bold;
   color: #25201f;
-  padding-top: 10%;
+  padding-top: 5%;
   padding-bottom: 30px;
 }
+
 .menu-midi .section-formules .formules {
   width: 70%;
   height: 700px;
@@ -293,6 +379,7 @@ header ul a:hover {
   justify-content: space-between;
   align-items: center;
 }
+
 .menu-midi .section-formules .formules .card {
   position: relative;
   border-radius: 30px;
@@ -301,6 +388,7 @@ header ul a:hover {
   height: 100%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .menu-midi .section-formules .formules .card .image-card {
   background-image: url(img/aubrac_food_2.jpeg);
   width: 100%;
@@ -308,6 +396,7 @@ header ul a:hover {
   background-size: cover;
   border-radius: 30px 30px 0 0;
 }
+
 .menu-midi .section-formules .formules .card .content {
   height: 50%;
   display: flex;
@@ -315,12 +404,14 @@ header ul a:hover {
   justify-content: space-around;
   align-items: center;
 }
+
 .menu-midi .section-formules .formules .card .content p {
   font-size: 30px;
   color: white;
   text-align: center;
   line-height: 50px;
 }
+
 .menu-midi .section-formules .formules .card .content .price {
   transform: skew(-20deg);
   height: 20%;
@@ -328,6 +419,7 @@ header ul a:hover {
   background-color: white;
   position: relative;
 }
+
 .menu-midi .section-formules .formules .card .content .price p {
   display: flex;
   justify-content: center;
@@ -336,6 +428,7 @@ header ul a:hover {
   transform: skew(20deg);
   color: #25201f;
 }
+
 .menu-midi .section-dejeuner {
   display: flex;
   justify-content: center;
@@ -344,6 +437,7 @@ header ul a:hover {
   position: relative;
   z-index: 1;
 }
+
 .menu-midi .section-dejeuner h3 {
   display: flex;
   justify-content: center;
@@ -353,22 +447,26 @@ header ul a:hover {
   padding-top: 10%;
   padding-bottom: 30px;
 }
+
 .menu-midi .section-dejeuner h4 {
   padding-top: 5%;
   color: #fb7637;
   font-size: 45px;
   font-weight: bold;
 }
+
 .menu-midi .section-dejeuner h4 span {
   color: #25201f;
   font-weight: lighter;
 }
+
 .menu-midi .section-dejeuner p {
   line-height: 60px;
   font-size: 26px;
   font-weight: bold;
   padding-bottom: 5%;
 }
+
 .menu-midi .section-dejeuner .bg-dejeuner {
   width: 40%;
   position: absolute;
@@ -376,6 +474,7 @@ header ul a:hover {
   left: -362px;
   z-index: 0;
 }
+
 .menu-midi .section-dejeuner .bg-dejeuner2 {
   width: 40%;
   position: absolute;
@@ -383,6 +482,7 @@ header ul a:hover {
   right: -362px;
   z-index: 0;
 }
+
 .menu-midi .section-dejeuner .menu-grid {
   z-index: 1;
   display: grid;
@@ -393,18 +493,22 @@ header ul a:hover {
   grid-template-rows: 200px 200px 200px;
   margin-bottom: 6%;
 }
+
 .menu-midi .section-dejeuner .menu-grid div p {
   font-size: 34px;
   line-height: normal;
   padding-bottom: 1%;
 }
+
 .menu-midi .section-dejeuner .menu-grid div .veggie {
   color: #75B993;
 }
+
 .menu-midi .section-dejeuner .menu-grid div span {
   padding-top: 2%;
   line-height: 28px;
 }
+
 .menu-midi .section-dejeuner .menu-grid2 {
   z-index: 1;
   display: grid;
@@ -414,9 +518,11 @@ header ul a:hover {
   grid-template-columns: 25% 25% 25%;
   grid-row: auto;
 }
+
 .menu-midi .section-dejeuner .menu-grid2 h4 {
   padding-bottom: 10%;
 }
+
 .menu-midi .section-dejeuner .menu-grid2 p {
   line-height: normal;
 }
@@ -492,6 +598,7 @@ header ul a:hover {
   font-weight: bold;
   margin: 30px auto 0 auto;
 }
+
 .subtitle h2 {
   font-size: 50px;
   font-weight: bold;
@@ -499,16 +606,17 @@ header ul a:hover {
   padding-top: 40px;
   transition: color 0.8s, transform 0.8s;
 }
+
 .subtitle h2:hover {
   transform: translateX(10px);
   color: #fb7637;
 }
+
 @media screen and (max-width: 729px) {
   .subtitle h2 {
     font-size: 30px;
   }
 }
-
 .history_1,
 .history_2 {
   display: flex;
@@ -516,6 +624,7 @@ header ul a:hover {
   margin: 0 auto;
   padding-inline: 5%;
 }
+
 @media screen and (max-width: 943px) {
   .history_1 .wrapper,
 .history_2 .wrapper {
@@ -529,22 +638,23 @@ header ul a:hover {
     height: 300px !important;
   }
 }
-
 .history_1 {
   margin-top: 70px;
 }
+
 @media screen and (max-width: 729px) {
   .history_1 {
     margin-top: 20px;
   }
-  .history_1 p, .history_1 img {
+  .history_1 p,
+.history_1 img {
     margin-top: 20px;
   }
 }
-
 .history_2 {
   margin-top: -100px;
 }
+
 @media screen and (max-width: 943px) {
   .history_2 {
     margin-top: 50px;
@@ -556,11 +666,11 @@ header ul a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .history_2 p, .history_2 img {
+  .history_2 p,
+.history_2 img {
     margin-top: 20px;
   }
 }
-
 @media screen and (min-width: 729px) {
   .history_1 .wrapper,
 .history_2 .wrapper {
@@ -590,7 +700,8 @@ header ul a:hover {
     grid-row: 1/2;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
   }
   .history_1 img:nth-of-type(2),
@@ -599,7 +710,8 @@ header ul a:hover {
     grid-row: 2/3;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
     margin-top: -200px;
   }
@@ -629,7 +741,8 @@ header ul a:hover {
   .wrapper img {
     width: 100%;
     max-height: 150px;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     border-radius: 30px;
   }
 }
@@ -645,6 +758,11 @@ header ul a:hover {
   font-size: 1.2rem;
   line-height: 1.5;
   color: #222;
+}
+
+.text__container {
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 #footer a {
@@ -718,12 +836,12 @@ header ul a:hover {
   margin-left: 0.1rem;
   width: 3px;
   -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  animation: blink 1s infinite;
 }
 
 .container p span.cursor.typing {
   -webkit-animation: none;
-          animation: none;
+  animation: none;
 }
 
 @-webkit-keyframes blink {
@@ -743,7 +861,6 @@ header ul a:hover {
     background-color: #ccc;
   }
 }
-
 @keyframes blink {
   0% {
     background-color: #ccc;
@@ -760,4 +877,5 @@ header ul a:hover {
   100% {
     background-color: #ccc;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
