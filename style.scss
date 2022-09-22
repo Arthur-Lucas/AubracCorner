@@ -238,3 +238,56 @@ a {
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width: 768px) {
+    .div_all_footer {
+        display: block;
+    }
+}
+
+//--------------------------------
+//Section Main HomePage
+
+#main_homepage {
+    padding-left: 15%;
+    padding-right: 15%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main_homepage_column {
+    max-width: 40%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.main_homepage_image {
+    max-height: 300px;
+    border-radius: 15px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+@media screen and (max-width: 768px) {
+    #main_homepage {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+        display: block;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .main_homepage_image {
+        max-height: none;
+    }
+    .main_homepage_column {
+        font-size: 20px;
+        height: auto;
+        max-width: 100%;
+        padding: 5%;
+        display: flex;
+        justify-content: center;
+    }
+}
