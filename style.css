@@ -340,6 +340,8 @@ header ul a:hover {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .menu-midi .section-dejeuner h3 {
   display: flex;
@@ -362,20 +364,44 @@ header ul a:hover {
 }
 .menu-midi .section-dejeuner p {
   line-height: 60px;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: bold;
   padding-bottom: 5%;
 }
+.menu-midi .section-dejeuner .bg-dejeuner {
+  width: 40%;
+  position: absolute;
+  top: 152px;
+  left: -362px;
+  z-index: 0;
+}
+.menu-midi .section-dejeuner .bg-dejeuner2 {
+  width: 40%;
+  position: absolute;
+  top: 490px;
+  right: -362px;
+  z-index: 0;
+}
 .menu-midi .section-dejeuner .menu-grid {
+  z-index: 1;
   display: grid;
   width: 100%;
   justify-content: center;
   text-align: center;
   grid-template-columns: 30% 30% 30%;
-  grid-row: auto;
+  grid-template-rows: 200px 200px 200px;
 }
-.menu-midi .section-dejeuner .menu-grid p {
-  padding-bottom: 0;
+.menu-midi .section-dejeuner .menu-grid div p {
+  font-size: 34px;
+  line-height: normal;
+  padding-bottom: 1%;
+}
+.menu-midi .section-dejeuner .menu-grid div .veggie {
+  color: #75B993;
+}
+.menu-midi .section-dejeuner .menu-grid div span {
+  padding-top: 2%;
+  line-height: 28px;
 }
 
 @media screen and (max-width: 768px) {
