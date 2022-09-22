@@ -390,6 +390,7 @@ header ul a:hover {
   text-align: center;
   grid-template-columns: 30% 30% 30%;
   grid-template-rows: 200px 200px 200px;
+  margin-bottom: 10%;
 }
 .menu-midi .section-dejeuner .menu-grid div p {
   font-size: 34px;
@@ -402,6 +403,21 @@ header ul a:hover {
 .menu-midi .section-dejeuner .menu-grid div span {
   padding-top: 2%;
   line-height: 28px;
+}
+.menu-midi .section-dejeuner .menu-grid2 {
+  z-index: 1;
+  display: grid;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  grid-template-columns: 30% 30% 30%;
+  grid-row: auto;
+}
+.menu-midi .section-dejeuner .menu-grid2 h4 {
+  padding-bottom: 10%;
+}
+.menu-midi .section-dejeuner .menu-grid2 p {
+  line-height: normal;
 }
 
 @media screen and (max-width: 768px) {
