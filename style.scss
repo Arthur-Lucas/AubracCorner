@@ -293,6 +293,25 @@ header ul a:hover {
                 
             }
         }
+       
+        
+    }
+
+    .section-dejeuner{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        h3{
+            display: flex;
+            justify-content: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: #25201f;
+        padding-top: 10%;
+        padding-bottom: 30px;
+        }
+
         h4{
             padding-top: 5%;
             color:#fb7637;
@@ -309,7 +328,18 @@ header ul a:hover {
             font-weight: bold;
             padding-bottom: 5%;
         }
-        
+
+        .menu-grid{
+            display: grid;
+            width: 100%;
+            justify-content: center;
+            text-align: center;
+            grid-template-columns: 30% 30% 30%;
+            grid-row: auto;
+            p{
+                padding-bottom: 0;
+            }
+        }
     }
     
 }
