@@ -23,7 +23,7 @@ close_icone.onclick = function () {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = [" bon", " fun", " de la bonne viande", " des bonnes bières"];
+const textArray = [" chaleureux", " convivial", " de la viande local", " de l'after work"];
 const typingDelay = 100;
 const erasingDelay = 100;
 const newTextDelay = 750;
