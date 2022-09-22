@@ -59,6 +59,10 @@ body {
   background-color: #f4f4f4;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   color: #fff;
   padding: 20px 20%;
@@ -172,8 +176,7 @@ header {
 
 header img {
   max-height: 50px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 
 header ul {
@@ -287,7 +290,7 @@ header ul a:hover {
   padding-bottom: 30px;
 }
 .menu-midi .section-formules .formules {
-  width: 70%;
+  width: 60%;
   height: 700px;
   display: flex;
   justify-content: space-between;
@@ -299,7 +302,6 @@ header ul a:hover {
   background-color: #25201f;
   width: 40%;
   height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .menu-midi .section-formules .formules .card .image-card {
   background-image: url(img/aubrac_food_2.jpeg);
@@ -307,33 +309,6 @@ header ul a:hover {
   height: 50%;
   background-size: cover;
   border-radius: 30px 30px 0 0;
-}
-.menu-midi .section-formules .formules .card .content {
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-.menu-midi .section-formules .formules .card .content p {
-  font-size: 30px;
-  color: white;
-  text-align: center;
-}
-.menu-midi .section-formules .formules .card .content .price {
-  transform: skew(-20deg);
-  height: 20%;
-  width: 50%;
-  background-color: white;
-  position: relative;
-}
-.menu-midi .section-formules .formules .card .content .price p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform: skew(20deg);
-  color: #25201f;
 }
 
 @media screen and (max-width: 768px) {
@@ -407,6 +382,7 @@ header ul a:hover {
   font-weight: bold;
   margin: 30px auto 0 auto;
 }
+
 .subtitle h2 {
   font-size: 50px;
   font-weight: bold;
@@ -414,16 +390,17 @@ header ul a:hover {
   padding-top: 40px;
   transition: color 0.8s, transform 0.8s;
 }
+
 .subtitle h2:hover {
   transform: translateX(10px);
   color: #fb7637;
 }
+
 @media screen and (max-width: 729px) {
   .subtitle h2 {
     font-size: 30px;
   }
 }
-
 .history_1,
 .history_2 {
   display: flex;
@@ -431,6 +408,7 @@ header ul a:hover {
   margin: 0 auto;
   padding-inline: 5%;
 }
+
 @media screen and (max-width: 943px) {
   .history_1 .wrapper,
 .history_2 .wrapper {
@@ -444,22 +422,23 @@ header ul a:hover {
     height: 300px !important;
   }
 }
-
 .history_1 {
   margin-top: 70px;
 }
+
 @media screen and (max-width: 729px) {
   .history_1 {
     margin-top: 20px;
   }
-  .history_1 p, .history_1 img {
+  .history_1 p,
+.history_1 img {
     margin-top: 20px;
   }
 }
-
 .history_2 {
   margin-top: -100px;
 }
+
 @media screen and (max-width: 943px) {
   .history_2 {
     margin-top: 50px;
@@ -471,11 +450,11 @@ header ul a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  .history_2 p, .history_2 img {
+  .history_2 p,
+.history_2 img {
     margin-top: 20px;
   }
 }
-
 @media screen and (min-width: 729px) {
   .history_1 .wrapper,
 .history_2 .wrapper {
@@ -632,31 +611,11 @@ header ul a:hover {
   background-color: #ccc;
   margin-left: 0.1rem;
   width: 3px;
-  -webkit-animation: blink 1s infinite;
-          animation: blink 1s infinite;
+  animation: blink 1s infinite;
 }
 
 .container p span.cursor.typing {
-  -webkit-animation: none;
-          animation: none;
-}
-
-@-webkit-keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
-  }
+  animation: none;
 }
 
 @keyframes blink {
@@ -675,4 +634,6 @@ header ul a:hover {
   100% {
     background-color: #ccc;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*# sourceMappingURL=style.css.map */
