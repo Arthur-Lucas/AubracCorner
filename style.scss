@@ -526,10 +526,14 @@ header ul a:hover {
                     text-align: center;
                 }
 
-                h5 {
+                h5{
                     font-size: 40px;
                     font-weight: 700;
-                    padding-top: 50px;
+                    padding-top: 50px; 
+                    span {
+                        font-weight: lighter;
+                        font-size: 40px;
+                    } 
                 }
             }
         }
@@ -604,10 +608,45 @@ header ul a:hover {
                 text-align: center;
             }
 
-            h5 {
+            h5{
                 font-size: 40px;
                 font-weight: 700;
-                padding-top: 50px;
+                padding-top: 50px; 
+                span {
+                    font-weight: lighter;
+                    font-size: 40px;
+                } 
+            }
+        }
+
+        .boisson-supp{
+            width: 100%;
+            margin-left: 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                h5{
+                    font-size: 40px;
+                    font-weight: 700;
+                    padding-top: 50px;
+                    min-width: 30%;
+                    margin-right: 2%;
+                    span {
+                    font-weight: lighter;
+                    font-size: 40px;
+                } 
+                p{
+                    line-height: 20px;
+                    font-size: 16px;
+                    font-weight: normal;
+
+                }
+                }
+                
             }
         }
     }

@@ -528,6 +528,10 @@ header ul a:hover {
   font-weight: 700;
   padding-top: 50px;
 }
+.menu-soir .bieres .right .boisson-grid h5 span {
+  font-weight: lighter;
+  font-size: 40px;
+}
 
 .bieres2 {
   margin-bottom: 5%;
@@ -600,6 +604,38 @@ header ul a:hover {
   font-size: 40px;
   font-weight: 700;
   padding-top: 50px;
+}
+.bieres2 .right .boisson-grid h5 span {
+  font-weight: lighter;
+  font-size: 40px;
+}
+.bieres2 .right .boisson-supp {
+  width: 100%;
+  margin-left: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.bieres2 .right .boisson-supp div {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.bieres2 .right .boisson-supp div h5 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 50px;
+  min-width: 30%;
+  margin-right: 2%;
+}
+.bieres2 .right .boisson-supp div h5 span {
+  font-weight: lighter;
+  font-size: 40px;
+}
+.bieres2 .right .boisson-supp div h5 p {
+  line-height: 20px;
+  font-size: 16px;
+  font-weight: normal;
 }
 
 .menu-midi .section-formules .formules .card .image-card {
@@ -757,33 +793,41 @@ header ul a:hover {
     flex-direction: column;
     transition: 0.8s;
   }
+
   #burger_icone,
 #close_icone {
     visibility: visible;
     transform: translateX(0);
   }
+
   header ul {
     transform: translateX(-100vw);
     opacity: 0;
   }
+
   header img {
     position: fixed;
     top: 20px;
   }
+
   .sticky {
     max-height: 50px;
   }
+
   header {
     height: 50px;
   }
+
   .h1 h1 {
     font-size: 50px;
     line-height: 0.7;
     margin-right: 10px;
   }
+
   .text h2 {
     font-size: 20px;
   }
+
   .bg-dejeuner,
 .bg-dejeuner2 {
     display: none;
@@ -845,6 +889,7 @@ header ul a:hover {
   .subtitle h2 {
     font-size: 30px;
   }
+
   .history_1,
 .history_2 {
     margin-inline: 10%;
@@ -886,6 +931,7 @@ header ul a:hover {
   .history_1 {
     margin-top: 20px;
   }
+
   .history_1 p,
 .history_1 img {
     margin-top: 20px;
@@ -909,6 +955,7 @@ header ul a:hover {
     margin-top: 20px;
     margin-bottom: 20px;
   }
+
   .history_2 p,
 .history_2 img {
     margin-top: 20px;
@@ -919,6 +966,7 @@ header ul a:hover {
     margin-top: 0px;
     margin-bottom: 35px;
   }
+
   .history_1 img:nth-of-type(1),
 .history_2 img:nth-of-type(1) {
     order: 1;
@@ -931,15 +979,18 @@ header ul a:hover {
     grid-template-columns: 1fr 1fr;
     grid-gap: 50px;
   }
+
   .history_1 .wrapper img,
 .history_2 .wrapper img {
     max-height: 500px;
   }
+
   .history_1 p,
 .history_2 p {
     font-weight: 300;
     padding-top: 20px;
   }
+
   .history_1 p:nth-of-type(1),
 .history_2 p:nth-of-type(1) {
     grid-column: 1/2;
@@ -947,6 +998,7 @@ header ul a:hover {
     font-size: 20px;
     font-weight: 300;
   }
+
   .history_1 img:nth-of-type(1),
 .history_2 img:nth-of-type(1) {
     grid-column: 2/2;
@@ -956,6 +1008,7 @@ header ul a:hover {
     object-fit: cover;
     border-radius: 30px;
   }
+
   .history_1 img:nth-of-type(2),
 .history_2 img:nth-of-type(2) {
     grid-column: 1/2;
@@ -989,6 +1042,7 @@ header ul a:hover {
     align-items: center;
     justify-content: center;
   }
+
   .wrapper img {
     width: 100%;
     max-height: 150px;
@@ -1024,6 +1078,7 @@ header ul a:hover {
   .section_2 {
     margin-bottom: 16%;
   }
+
   .menu-midi .section-formules h3 {
     font-size: 30px;
   }
@@ -1068,6 +1123,7 @@ header ul a:hover {
   .menu-midi .section-dejeuner .menu-grid2 h4 {
     padding-bottom: 3%;
   }
+
   .menu-soir h2 {
     font-size: 30px;
   }
@@ -1457,6 +1513,7 @@ header ul a:hover {
     display: unset;
     min-height: auto;
   }
+
   .home_page_avi_article {
     max-width: 100%;
     min-height: unset;
@@ -1505,10 +1562,12 @@ header ul a:hover {
   .home_page_contact_part {
     flex-direction: column-reverse;
   }
+
   .home_page_contact_part_column {
     min-width: unset;
     width: 100%;
   }
+
   .home_page_contact_part_column h3 {
     font-size: 32px;
   }
