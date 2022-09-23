@@ -1569,6 +1569,7 @@ header ul a:hover {
 .home_page_avis_part_title {
     font-size: 40px;
     text-align: center;
+    font-weight: bold;
     margin-bottom: 48px;
 }
 
@@ -1581,7 +1582,16 @@ header ul a:hover {
     .home_page_avi_article {
         max-width: 100%;
         min-height: unset;
-        margin-top: 5%;
+        margin-top: 20%;
+        div{
+            margin-bottom: 5%;
+        }
+    }
+    .home_page_avis_part_title{
+        padding-top: 20%;
+        margin-bottom: 24px;
+        font-weight: bold;
+        font-size: 30px;
     }
 }
 
