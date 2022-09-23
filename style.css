@@ -1223,6 +1223,18 @@ header ul a:hover {
   .menu-soir .bieres2 .right .boisson-grid .boisson .title-margin2 {
     padding-top: 5px;
   }
+  .menu-soir .bieres2 .right .boisson-supp {
+    margin-left: 0;
+  }
+  .menu-soir .bieres2 .right .boisson-supp h5 {
+    padding-top: 32px;
+  }
+  .menu-soir .bieres2 .right .boisson-supp h5 p {
+    font-size: 12px;
+  }
+  .menu-soir .bieres2 .right .boisson-supp h5, .menu-soir .bieres2 .right .boisson-supp span {
+    font-size: 20px;
+  }
 }
 #footer a {
   text-decoration: none;
