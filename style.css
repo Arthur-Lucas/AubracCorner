@@ -1576,7 +1576,7 @@ header ul a:hover {
 }
 @media screen and (min-width: 729px) {
   .call-to-action a .fieldset_concept {
-    filter: saturate(50%);
+    filter: contrast(50%);
   }
 }
 .call-to-action a .fieldset_history {
@@ -1584,7 +1584,7 @@ header ul a:hover {
 }
 @media screen and (min-width: 729px) {
   .call-to-action a .fieldset_history {
-    filter: saturate(50%);
+    filter: contrast(50%);
   }
 }
 .call-to-action a .fieldset_menu {
@@ -1592,14 +1592,14 @@ header ul a:hover {
 }
 @media screen and (min-width: 729px) {
   .call-to-action a .fieldset_menu {
-    filter: saturate(50%);
+    filter: contrast(50%);
   }
 }
 .call-to-action a:hover legend {
   color: #fb7637 !important;
 }
 .call-to-action a:hover fieldset {
-  filter: saturate(100%);
+  filter: contrast(100%);
 }
 .call-to-action a img {
   width: 100%;
