@@ -390,6 +390,7 @@ header ul a:hover {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 3%;
             .card {
                 position: relative;
                 border-radius: 30px;
@@ -677,6 +678,7 @@ header ul a:hover {
     text-align: center;
     grid-template-columns: 25% 25% 25%;
     grid-row: auto;
+    margin-bottom: 5%;
 }
 
 .menu-midi .section-dejeuner .menu-grid2 h4 {
