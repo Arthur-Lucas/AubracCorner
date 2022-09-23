@@ -1168,6 +1168,9 @@ header ul a:hover {
     padding-top: 20px;
     font-size: 20px;
   }
+  .menu-soir .bieres .right .boisson-grid h5 span {
+    font-size: 20px;
+  }
   .menu-soir .bieres .right .grid2 {
     padding-top: 20%;
   }
