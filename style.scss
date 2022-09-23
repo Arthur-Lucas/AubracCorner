@@ -197,7 +197,7 @@ header {
 }
 
 .background_histoire {
-    background: url("../img/Aubrac-Corner-histoire.jpeg") no-repeat center center;
+    background: url("img/Aubrac-Corner-histoire.jpeg") no-repeat center center;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -340,15 +340,23 @@ header ul a:hover {
 
 .menu-midi {
     background-color: #f4f4f4;
-}
+    h2 {
+        padding: 220px 0 0 114px;
+        font-size: 128px;
+        font-weight: bold;
+        position: relative;
+        color: #25201f;
+    }
+    // h2::before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 6.45%;
 
-.menu-midi h2 {
-    padding: 220px 0 0 114px;
-    font-size: 128px;
-    font-weight: bold;
-    position: relative;
-    color: #25201f;
-}
+    //     bottom: 0;
+    //     width: 350px;
+    //     height: 14px;
+    //     background: #25201f;
+    // }
 
 .menu-midi h2::before {
     content: "";
@@ -386,7 +394,8 @@ header ul a:hover {
                 background-color: #25201f;
                 width: 40%;
                 height: 100%;
-                .image-card {
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+                .image-card{
                     background-image: url(img/aubrac_food_2.jpeg);
 
                     width: 100%;
@@ -453,6 +462,89 @@ header ul a:hover {
     width: 40%;
     height: 100%;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.menu-soir{
+    background-color: #25201f;
+    color: white;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    h2{
+        
+        font-size: 60px;
+        font-weight: 700;
+        padding: 10% 0 5% 0;
+    }
+    h3{
+        font-size: 45px;
+        padding-bottom: 5%;
+    }
+    .bieres{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        .boisson-img{
+            width: 40%;
+            display: flex;
+            justify-content: end;
+            img{
+            width: 70%;
+            border-radius:  40px;
+            }
+        }
+        .right{
+            width: 60%;
+        
+        .boisson-grid{
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 5% 40% 25% 10% 10% 10%;
+
+            h4{
+                font-size: 40px;
+                font-weight: 700;
+                padding-bottom: 50px;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 700;
+                padding-bottom: 70px;
+            }
+            span{
+                font-size: 16px;
+                line-height: 50px;
+            }
+
+            .boisson{
+                display: flex;
+                flex-direction: column;
+            }
+            .nom{
+                grid-column: 2 / 3;
+                justify-content: flex-start;
+            }
+            .prix1{
+                grid-column: 4 / 5;
+                text-align: center;
+                border-right: 5px solid white;
+            }
+            .prix2{
+                grid-column: 5 / 6;
+                text-align: center;
+            }
+
+            h5{
+                font-size: 40px;
+                font-weight: 700;
+                padding-top: 50px; 
+            }
+
+        }
+    }
+    }
 }
 
 .menu-midi .section-formules .formules .card .image-card {
@@ -643,6 +735,14 @@ header ul a:hover {
     .text h2 {
         font-size: 20px;
     }
+
+    // Menu background (burger)
+
+    .bg-dejeuner, .bg-dejeuner2{
+        display: none;
+    }
+
+    
 }
 
 @media screen and (min-width: 768px) {

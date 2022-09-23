@@ -196,7 +196,7 @@ header {
 }
 
 .background_histoire {
-  background: url("../img/Aubrac-Corner-histoire.jpeg") no-repeat center center;
+  background: url("img/Aubrac-Corner-histoire.jpeg") no-repeat center center;
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -258,6 +258,7 @@ header {
 header img {
   max-height: 50px;
   -o-object-fit: contain;
+  object-fit: contain;
   object-fit: contain;
 }
 
@@ -436,6 +437,7 @@ header ul a:hover {
 
 .menu-midi .section-formules .formules {
   width: 70%;
+  width: 60%;
   height: 700px;
   display: flex;
   justify-content: space-between;
@@ -448,7 +450,7 @@ header ul a:hover {
   background-color: #25201f;
   width: 40%;
   height: 100%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .menu-midi .section-formules .formules .card .image-card {
@@ -589,6 +591,83 @@ header ul a:hover {
   line-height: normal;
 }
 
+.menu-soir {
+  background-color: #25201f;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.menu-soir h2 {
+  font-size: 60px;
+  font-weight: 700;
+  padding: 10% 0 5% 0;
+}
+.menu-soir h3 {
+  font-size: 45px;
+  padding-bottom: 5%;
+}
+.menu-soir .bieres {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.menu-soir .bieres .boisson-img {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+.menu-soir .bieres .boisson-img img {
+  width: 70%;
+  border-radius: 40px;
+}
+.menu-soir .bieres .right {
+  width: 60%;
+}
+.menu-soir .bieres .right .boisson-grid {
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 5% 40% 25% 10% 10% 10%;
+}
+.menu-soir .bieres .right .boisson-grid h4 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+.menu-soir .bieres .right .boisson-grid p {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 70px;
+}
+.menu-soir .bieres .right .boisson-grid span {
+  font-size: 16px;
+  line-height: 50px;
+}
+.menu-soir .bieres .right .boisson-grid .boisson {
+  display: flex;
+  flex-direction: column;
+}
+.menu-soir .bieres .right .boisson-grid .nom {
+  grid-column: 2/3;
+  justify-content: flex-start;
+}
+.menu-soir .bieres .right .boisson-grid .prix1 {
+  grid-column: 4/5;
+  text-align: center;
+  border-right: 5px solid white;
+}
+.menu-soir .bieres .right .boisson-grid .prix2 {
+  grid-column: 5/6;
+  text-align: center;
+}
+.menu-soir .bieres .right .boisson-grid h5 {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
 @media screen and (max-width: 768px) {
   .menu_burger {
     display: block;
@@ -605,32 +684,43 @@ header ul a:hover {
     flex-direction: column;
     transition: 0.8s;
   }
+
   #burger_icone,
 #close_icone {
     visibility: visible;
     transform: translateX(0);
   }
+
   header ul {
     transform: translateX(-100vw);
     opacity: 0;
   }
+
   header img {
     position: fixed;
     top: 20px;
   }
+
   .sticky {
     max-height: 50px;
   }
+
   header {
     height: 50px;
   }
+
   .h1 h1 {
     font-size: 50px;
     line-height: 0.7;
     margin-right: 10px;
   }
+
   .text h2 {
     font-size: 20px;
+  }
+
+  .bg-dejeuner, .bg-dejeuner2 {
+    display: none;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1069,14 +1159,16 @@ header ul a:hover {
   width: 3px;
   -webkit-animation: blink 1s infinite;
   animation: blink 1s infinite;
+  animation: blink 1s infinite;
 }
 
 .container p span.cursor.typing {
   -webkit-animation: none;
   animation: none;
+  animation: none;
 }
 
-@-webkit-keyframes blink {
+@keyframes blink {
   0% {
     background-color: #ccc;
   }
@@ -1111,3 +1203,5 @@ header ul a:hover {
   }
 }
 /*# sourceMappingURL=style.css.map *//*# sourceMappingURL=style.css.map */
+
+/*# sourceMappingURL=style.css.map */
