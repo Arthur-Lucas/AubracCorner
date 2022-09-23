@@ -1576,7 +1576,7 @@ header ul a:hover {
 }
 @media screen and (min-width: 729px) {
   .call-to-action a .fieldset_concept {
-    filter: contrast(50%);
+    filter: contrast(70%);
   }
 }
 .call-to-action a .fieldset_history {
@@ -1584,7 +1584,7 @@ header ul a:hover {
 }
 @media screen and (min-width: 729px) {
   .call-to-action a .fieldset_history {
-    filter: contrast(50%);
+    filter: contrast(70%);
   }
 }
 .call-to-action a .fieldset_menu {
@@ -1592,7 +1592,7 @@ header ul a:hover {
 }
 @media screen and (min-width: 729px) {
   .call-to-action a .fieldset_menu {
-    filter: contrast(50%);
+    filter: contrast(70%);
   }
 }
 .call-to-action a:hover legend {
