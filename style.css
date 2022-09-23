@@ -348,6 +348,16 @@ header ul a:hover {
   color: #25201f;
 }
 
+.menu-midi h2::before {
+  content: "";
+  position: absolute;
+  left: 6.45%;
+  bottom: 0;
+  width: 350px;
+  height: 14px;
+  background: #25201f;
+}
+
 .menu-midi .section-formules {
   display: flex;
   justify-content: center;
@@ -369,6 +379,7 @@ header ul a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3%;
 }
 .menu-midi .section-formules .formules .card {
   position: relative;
@@ -459,7 +470,6 @@ header ul a:hover {
   padding-bottom: 5%;
 }
 .menu-soir .bieres {
-  margin-bottom: 10%;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -485,12 +495,12 @@ header ul a:hover {
 .menu-soir .bieres .right .boisson-grid h4 {
   font-size: 40px;
   font-weight: 700;
-  padding-bottom: 5px;
+  padding-bottom: 50px;
 }
 .menu-soir .bieres .right .boisson-grid p {
   font-size: 20px;
   font-weight: 700;
-  padding-bottom: 25px;
+  padding-bottom: 70px;
 }
 .menu-soir .bieres .right .boisson-grid span {
   font-size: 16px;
@@ -997,6 +1007,159 @@ header ul a:hover {
   color: #222;
 }
 
+.marg_text_histoire {
+  line-height: 1.2;
+  color: #222;
+}
+
+.text__container {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+@media screen and (max-width: 729px) {
+  .menu-midi .section-formules h3 {
+    font-size: 30px;
+  }
+  .menu-midi .section-formules .formules {
+    flex-direction: column;
+  }
+  .menu-midi .section-formules .formules .card {
+    margin-bottom: 20%;
+    width: 100%;
+  }
+  .menu-midi .section-formules .formules .card .content {
+    justify-content: space-evenly;
+  }
+  .menu-midi .section-formules .formules .card .content p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .menu-midi .section-dejeuner h3 {
+    font-size: 30px;
+  }
+  .menu-midi .section-dejeuner h4 {
+    font-size: 25px;
+    padding-bottom: 0;
+  }
+  .menu-midi .section-dejeuner p {
+    font-size: 20px;
+  }
+  .menu-midi .section-dejeuner .menu-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-midi .section-dejeuner .menu-grid div {
+    padding: 5% 0;
+  }
+  .menu-midi .section-dejeuner .menu-grid div p {
+    font-size: 22px;
+  }
+  .menu-midi .section-dejeuner .menu-grid2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu-midi .section-dejeuner .menu-grid2 h4 {
+    padding-bottom: 3%;
+  }
+
+  .menu-soir h2 {
+    font-size: 30px;
+  }
+  .menu-soir .bieres {
+    padding-top: 20%;
+    width: 90%;
+  }
+  .menu-soir .bieres .boisson-img {
+    display: none;
+  }
+  .menu-soir .bieres .right {
+    width: 100%;
+  }
+  .menu-soir .bieres .right .boisson-grid {
+    grid-template-columns: 60% 20% 20%;
+  }
+  .menu-soir .bieres .right .boisson-grid span {
+    font-size: 14px;
+  }
+  .menu-soir .bieres .right .boisson-grid .nom {
+    grid-column: 1/2;
+  }
+  .menu-soir .bieres .right .boisson-grid .nom h4 {
+    font-size: 20px;
+    padding-bottom: 21px;
+  }
+  .menu-soir .bieres .right .boisson-grid .prix1 {
+    grid-column: 2/3;
+  }
+  .menu-soir .bieres .right .boisson-grid .prix1 p {
+    font-size: 16px;
+  }
+  .menu-soir .bieres .right .boisson-grid .prix2 {
+    grid-column: 3/4;
+  }
+  .menu-soir .bieres .right .boisson-grid .prix2 p {
+    font-size: 16px;
+  }
+  .menu-soir .bieres .right .boisson-grid h5 {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .menu-soir .bieres .right .grid2 {
+    padding-top: 20%;
+  }
+  .menu-soir .bieres2 {
+    padding-top: 20%;
+    width: 90%;
+  }
+  .menu-soir .bieres2 .boisson-img {
+    display: none;
+  }
+  .menu-soir .bieres2 .right {
+    width: 100%;
+  }
+  .menu-soir .bieres2 .right .boisson-grid {
+    grid-template-columns: 40% 20% 20% 20%;
+  }
+  .menu-soir .bieres2 .right .boisson-grid span {
+    font-size: 14px;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .nom {
+    grid-column: 1/2;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .nom h4 {
+    font-size: 20px;
+    padding-bottom: 21px;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .prix1 {
+    grid-column: 2/3;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .prix1 p {
+    font-size: 16px;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .prix2 {
+    grid-column: 3/4;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .prix2 p {
+    font-size: 16px;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .prix3 {
+    grid-column: 4/5;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .prix3 p {
+    font-size: 16px;
+  }
+  .menu-soir .bieres2 .right .boisson-grid h5, .menu-soir .bieres2 .right .boisson-grid .title-margin1 {
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .boisson .title-margin1 {
+    height: 20px;
+  }
+  .menu-soir .bieres2 .right .boisson-grid .boisson .title-margin2 {
+    padding-top: 5px;
+  }
+}
 #footer a {
   text-decoration: none;
   color: white;
@@ -1251,6 +1414,95 @@ header ul a:hover {
   margin-bottom: 5%;
 }
 
+.home_page_avis {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home_page_avi_article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 30%;
+  min-height: 320px;
+}
+
+.home_page_avi_article_text {
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.home_page_avis_part_title {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+@media screen and (max-width: 729px) {
+  .home_page_avis {
+    display: unset;
+    min-height: auto;
+  }
+
+  .home_page_avi_article {
+    max-width: 100%;
+    min-height: unset;
+    margin-top: 5%;
+  }
+}
+.home_page_contact_part {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 5%;
+}
+
+.home_page_contact_part_column_contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.home_page_contact_part iframe {
+  margin-right: 2%;
+}
+
+.home_page_contact_part_column {
+  min-width: 40%;
+}
+
+.home_page_contact_part_column h3 {
+  margin-bottom: 12%;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.home_page_contact_part_column h4 {
+  margin-bottom: 4%;
+  font-size: 28px;
+}
+
+.home_page_contact_part_column p {
+  margin-bottom: 8%;
+}
+
+@media screen and (max-width: 729px) {
+  .home_page_contact_part {
+    flex-direction: column-reverse;
+  }
+
+  .home_page_contact_part_column {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .home_page_contact_part_column h3 {
+    font-size: 32px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
 
 /*# sourceMappingURL=style.css.map */
