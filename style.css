@@ -472,6 +472,7 @@ header ul a:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
+  margin-bottom: 10%;
 }
 .menu-soir .bieres .boisson-img {
   width: 40%;
@@ -1118,12 +1119,14 @@ header ul a:hover {
   }
   .menu-soir .bieres .right .boisson-grid .prix1 p {
     font-size: 16px;
+    padding-bottom: 25px;
   }
   .menu-soir .bieres .right .boisson-grid .prix2 {
     grid-column: 3/4;
   }
   .menu-soir .bieres .right .boisson-grid .prix2 p {
     font-size: 16px;
+    padding-bottom: 25px;
   }
   .menu-soir .bieres .right .boisson-grid h5 {
     padding-top: 20px;
