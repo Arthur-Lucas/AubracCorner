@@ -1065,13 +1065,16 @@ header ul a:hover {
     color: #222;
 }
 
-.text__container {
+.text__container {  
     margin-bottom: 5%;
     margin-top: 5%;
 }
 // Menu reponsive
 
 @media screen and (max-width: 729px) {
+    .section_2 {
+        margin-bottom: 16%;
+    }
     .menu-midi {
         .section-formules {
             h3 {
@@ -1490,6 +1493,10 @@ header ul a:hover {
 .text__container {
     margin-top: 3%;
     margin-bottom: 5%;
+}
+
+.home_page_avis_part {
+    margin: 5% 15%;
 }
 
 .home_page_avis {
