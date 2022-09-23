@@ -140,7 +140,7 @@ body {
     background-color: #f4f4f4;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 //--------------------------------
@@ -347,7 +347,6 @@ header ul a:hover {
         position: relative;
         color: #25201f;
     }
-
 }
 
 .menu-midi .section-formules {
@@ -355,69 +354,68 @@ header ul a:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-        h3 {
-            display: flex;
-            justify-content: center;
-            font-size: 60px;
-            font-weight: bold;
-            color: #25201f;
-            padding-top: 10%;
-            padding-bottom: 30px;
-        }
-        .formules {
-            width: 60%;
-            height: 700px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .card {
-                position: relative;
-                border-radius: 30px;
-                background-color: #25201f;
-                width: 40%;
-                height: 100%;
-                box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-                .image-card{
-                    background-image: url(img/aubrac_food_2.jpeg);
+    h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        font-weight: bold;
+        color: #25201f;
+        padding-top: 10%;
+        padding-bottom: 30px;
+    }
+    .formules {
+        width: 60%;
+        height: 700px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .card {
+            position: relative;
+            border-radius: 30px;
+            background-color: #25201f;
+            width: 40%;
+            height: 100%;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px,
+                rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            .image-card {
+                background-image: url(img/aubrac_food_2.jpeg);
 
-                    width: 100%;
-                    height: 50%;
-                    background-size: cover;
-                    border-radius: 30px 30px 0 0;
+                width: 100%;
+                height: 50%;
+                background-size: cover;
+                border-radius: 30px 30px 0 0;
+            }
+            .content {
+                height: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                p {
+                    font-size: 30px;
+                    color: white;
+                    text-align: center;
+                    line-height: 50px;
                 }
-                .content{
-                    height: 50%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-around;
-                    align-items: center;
-                    p{
-                        font-size: 30px;
-                        color: white;
-                        text-align: center;
-                        line-height: 50px;
-                    }
-                    .price{
-                        transform: skew(-20deg);
-                        height: 20%;
-                        width: 50%;
-                        background-color: white;
-                        position: relative;
-                        p{
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            height: 100%;
-                            transform: skew(20deg);
-                            color:#25201f;
-                        }
+                .price {
+                    transform: skew(-20deg);
+                    height: 20%;
+                    width: 50%;
+                    background-color: white;
+                    position: relative;
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        transform: skew(20deg);
+                        color: #25201f;
                     }
                 }
-                
             }
         }
     }
-
+}
 
 .menu-midi .section-formules h3 {
     display: flex;
@@ -446,171 +444,162 @@ header ul a:hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
-.menu-soir{
+.menu-soir {
     background-color: #25201f;
     color: white;
     display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    h2{
-        
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    h2 {
         font-size: 60px;
         font-weight: 700;
         padding: 10% 0 5% 0;
     }
-    h3{
+    h3 {
         font-size: 45px;
         padding-bottom: 5%;
     }
-    .bieres{
+    .bieres {
         margin-bottom: 10%;
         display: flex;
         justify-content: space-evenly;
         align-items: flex-start;
-        .boisson-img{
+        .boisson-img {
             width: 40%;
             display: flex;
             justify-content: end;
-            img{
-            width: 70%;
-            border-radius:  40px;
+            img {
+                width: 70%;
+                border-radius: 40px;
             }
         }
-        .right{
+        .right {
             width: 60%;
-        
-        .boisson-grid{
-            width: 100%;
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 5% 40% 25% 10% 10% 10%;
 
-            h4{
-                font-size: 40px;
-                font-weight: 700;
-                padding-bottom: 5px;
-            }
-            p{
-                font-size: 20px;
-                font-weight: 700;
-                padding-bottom: 25px;
-            }
-            span{
-                font-size: 16px;
-                line-height: 50px;
-            }
+            .boisson-grid {
+                width: 100%;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 5% 40% 25% 10% 10% 10%;
 
-            .boisson{
-                display: flex;
-                flex-direction: column;
-            }
-            .nom{
-                grid-column: 2 / 3;
-                justify-content: flex-start;
-            }
-            .prix1{
-                grid-column: 4 / 5;
-                text-align: center;
-                border-right: 5px solid white;
-            }
-            .prix2{
-                grid-column: 5 / 6;
-                text-align: center;
-            }
+                h4 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    padding-bottom: 5px;
+                }
+                p {
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding-bottom: 25px;
+                }
+                span {
+                    font-size: 16px;
+                    line-height: 50px;
+                }
 
-            h5{
-                font-size: 40px;
-                font-weight: 700;
-                padding-top: 50px; 
-            }
+                .boisson {
+                    display: flex;
+                    flex-direction: column;
+                }
+                .nom {
+                    grid-column: 2 / 3;
+                    justify-content: flex-start;
+                }
+                .prix1 {
+                    grid-column: 4 / 5;
+                    text-align: center;
+                    border-right: 5px solid white;
+                }
+                .prix2 {
+                    grid-column: 5 / 6;
+                    text-align: center;
+                }
 
+                h5 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    padding-top: 50px;
+                }
+            }
         }
     }
 
-    
-
-    }
-
-    .bieres2{
+    .bieres2 {
         margin-bottom: 5%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-evenly;
         align-items: flex-start;
-        .boisson-img{
+        .boisson-img {
             width: 40%;
             display: flex;
             justify-content: flex-start;
-            img{
-            width: 70%;
-            border-radius:  40px;
+            img {
+                width: 70%;
+                border-radius: 40px;
             }
         }
-        .right{
+        .right {
             width: 60%;
-        
-        .boisson-grid{
-            width: 100%;
-            display: grid;
-            justify-content: center;
-            grid-template-columns: 10% 40% 15% 10% 10% 10% 5%;
 
-            h4{
-                font-size: 40px;
-                font-weight: 700;
-                padding-bottom: 5px;
-            }
-            p{
-                font-size: 20px;
-                font-weight: 700;
-                padding-bottom: 25px;
-            }
-            span{
-                font-size: 16px;
-                line-height: 50px;
-            }
+            .boisson-grid {
+                width: 100%;
+                display: grid;
+                justify-content: center;
+                grid-template-columns: 10% 40% 15% 10% 10% 10% 5%;
 
-            .boisson{
-                display: flex;
-                flex-direction: column;
-                .title-margin1{
-                    height: 90px;
+                h4 {
+                    font-size: 40px;
+                    font-weight: 700;
+                    padding-bottom: 5px;
                 }
-                .title-margin2{
+                p {
+                    font-size: 20px;
+                    font-weight: 700;
+                    padding-bottom: 25px;
+                }
+                span {
+                    font-size: 16px;
+                    line-height: 50px;
+                }
+
+                .boisson {
+                    display: flex;
+                    flex-direction: column;
+                    .title-margin1 {
+                        height: 90px;
+                    }
+                    .title-margin2 {
+                        padding-top: 50px;
+                    }
+                }
+                .nom {
+                    grid-column: 2 / 3;
+                    justify-content: flex-start;
+                }
+                .prix1 {
+                    grid-column: 4 / 5;
+                    text-align: center;
+                    border-right: 5px solid white;
+                }
+                .prix2 {
+                    grid-column: 5 / 6;
+                    text-align: center;
+                    border-right: 5px solid white;
+                }
+                .prix3 {
+                    grid-column: 6 / 7;
+                    text-align: center;
+                }
+
+                h5 {
+                    font-size: 40px;
+                    font-weight: 700;
                     padding-top: 50px;
                 }
             }
-            .nom{
-                grid-column: 2 / 3;
-                justify-content: flex-start;
-            }
-            .prix1{
-                grid-column: 4 / 5;
-                text-align: center;
-                border-right: 5px solid white;
-            }
-            .prix2{
-                grid-column: 5 / 6;
-                text-align: center;
-                border-right: 5px solid white;
-            }
-            .prix3{
-                grid-column: 6 / 7;
-                text-align: center;
-            }
-
-            h5{
-                font-size: 40px;
-                font-weight: 700;
-                padding-top: 50px; 
-            }
-
         }
-    }
-
-    
-
     }
 }
 
@@ -726,7 +715,7 @@ header ul a:hover {
 }
 
 .menu-midi .section-dejeuner .menu-grid div .veggie {
-    color: #75B993;
+    color: #75b993;
 }
 
 .menu-midi .section-dejeuner .menu-grid div span {
@@ -805,11 +794,10 @@ header ul a:hover {
 
     // Menu background (burger)
 
-    .bg-dejeuner, .bg-dejeuner2{
+    .bg-dejeuner,
+    .bg-dejeuner2 {
         display: none;
     }
-
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -837,7 +825,6 @@ header ul a:hover {
         margin-top: 50px;
     }
 }
-    
 
 .subtitle {
     display: flex;
@@ -859,9 +846,7 @@ header ul a:hover {
         padding-top: 20px;
         margin-bottom: -20px;
     }
-        
 }
-
 
 .subtitle h2:hover {
     transform: translateX(10px);
@@ -871,18 +856,15 @@ header ul a:hover {
 @media screen and (max-width: 729px) {
     .subtitle h2 {
         font-size: 30px;
-
     }
-    .history_1, .history_2{
+    .history_1,
+    .history_2 {
         margin-inline: 10%;
-        p{
+        p {
             font-size: 20px;
         }
-    } 
-    
-
+    }
 }
-
 
 .history_1,
 .history_2 {
@@ -893,7 +875,6 @@ header ul a:hover {
 }
 
 @media screen and (max-width: 943px) {
-
     .history_1 .wrapper,
     .history_2 .wrapper {
         justify-content: center;
@@ -902,7 +883,6 @@ header ul a:hover {
 }
 
 @media screen and (max-width: 943px) {
-
     .history_1 img,
     .history_2 img {
         height: 300px !important;
@@ -912,7 +892,7 @@ header ul a:hover {
 .history_1 {
     margin-top: 70px;
 
-    p{
+    p {
         text-align: justify;
     }
 }
@@ -930,7 +910,7 @@ header ul a:hover {
 
 .history_2 {
     margin-top: -100px;
-    p{
+    p {
         text-align: justify;
     }
 }
@@ -956,18 +936,15 @@ header ul a:hover {
 @media screen and (max-width: 729px) {
     .history_2 {
         margin-top: 0px;
-        margin-bottom:35px;
-        
+        margin-bottom: 35px;
     }
-    .history_1 img:nth-of-type(1), .history_2 img:nth-of-type(1){
+    .history_1 img:nth-of-type(1),
+    .history_2 img:nth-of-type(1) {
         order: 1;
     }
-
 }
 
-
 @media screen and (min-width: 729px) {
-
     .history_1 .wrapper,
     .history_2 .wrapper {
         display: grid;
@@ -1017,7 +994,6 @@ header ul a:hover {
 }
 
 @media screen and (min-width: 729px) and (max-width: 943px) {
-
     .history_1 img:nth-of-type(2),
     .history_2 img:nth-of-type(2) {
         margin-top: 0;
@@ -1025,7 +1001,6 @@ header ul a:hover {
 }
 
 @media screen and (min-width: 729px) {
-
     .history_1 p:nth-of-type(2),
     .history_2 p:nth-of-type(2) {
         grid-column: 2/3;
@@ -1088,7 +1063,7 @@ header ul a:hover {
     justify-content: center;
 }
 
-.footer_list_buttons>ul {
+.footer_list_buttons > ul {
     margin-bottom: 18px;
 }
 
@@ -1146,6 +1121,146 @@ header ul a:hover {
     animation: none;
 }
 
+//------------------------------
+/* MENU SHARE BOX & HAPPY HOUR*/
+
+.share-hours div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6%;
+}
+
+
+.happy-hours section div:nth-of-type(1) {
+    margin-bottom: 70px;
+    margin-top: 20px;
+
+    @media screen and (max-width: 729px) {
+        margin-bottom: 0px;
+    }
+
+    h4 {
+        margin-inline: 20px;
+        font-size: 25px !important;
+        color: #fb7637;
+        font-weight: 500;
+        
+    }
+    p {
+        margin-top: 0 !important;
+        font-weight: 200;
+    }
+}
+
+.share-hours {
+    margin-inline: 10%;
+    justify-content: center;
+    margin-top: 90px;
+
+    .separator {
+        display: none;
+        margin-bottom: 40px;
+        width: 50%;
+    }
+    @media screen and (max-width: 729px) {
+        margin-inline: 3%;
+        .separator {
+            display: block;
+        }
+    }
+
+    fieldset {
+        margin-inline: 5%;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        transition: border 1s;
+        border: 2px solid transparent;
+        padding-bottom: 30px;
+        border-radius: 30px;
+        margin-bottom: 90px;
+        @media screen and (max-width: 729px) {
+            margin-inline: 1%;
+            padding-top: 40px;
+            box-shadow: none;
+            margin-bottom: 0;
+        }
+
+        > section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media screen and (max-width: 729px) {
+                flex-direction: column;
+            }
+
+            img {
+                width: 100%;
+                border-radius: 30px;
+            }
+            > section:nth-of-type(1) {
+                width: 70%;
+                @media screen and (max-width: 729px) {
+                    width: 100%;
+                }
+                margin-right: 20px;
+            }
+
+            > section:nth-of-type(2) {
+                width: 30%;
+                justify-content: center;
+                padding-right: 20px;
+                @media screen and (max-width: 729px) {
+                    width: 100%;
+                    margin-top: 20px;
+                    padding-right: 0;
+                }
+            }
+            p {
+                margin-inline: 20px;
+                margin-top: -50px;
+                @media screen and (max-width: 729px) {
+                    margin-top: 0;
+                    line-height: 1.3;
+                }
+            }
+        }
+        &:hover {
+            @media screen and (min-width: 729px) {
+                border: 2px solid #fb7637;
+
+                legend {
+                    color: #fb7637;
+                }
+            }
+        }
+    
+
+        legend {
+            font-size: 30px;
+            font-weight: bold;
+            color: #25201f;
+            transition: color 0.8s;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            margin-left: 20px;
+
+            @media screen and (max-width: 768px) {
+                padding-top: 20px;
+                margin-bottom: -20px;
+                margin-left: 3%;
+            }
+            &:hover {
+                color: #fb7637;
+            }
+        }
+    }
+}
+
+
+
+
+//------------------------------
+
 @-webkit-keyframes blink {
     0% {
         background-color: #ccc;
@@ -1190,7 +1305,7 @@ header ul a:hover {
     }
 }
 
-.text__container{
+.text__container {
     margin-top: 3%;
     margin-bottom: 5%;
 }
